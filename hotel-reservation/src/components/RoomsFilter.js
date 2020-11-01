@@ -26,6 +26,10 @@ export default function RoomsFilter({rooms}) {
     // map to jsx
     types = types.map((item, index) => {
         return <option key={index} value={item}>{item}</option>
+    });
+    let people = getUnique(rooms, "capacity");
+    people = people.map((item,index) => {
+        return <option key={index} value={item} >{item}</option>
     })
     return (
         <section className="filter-container">
@@ -40,6 +44,17 @@ export default function RoomsFilter({rooms}) {
                         id="type" 
                         value={type}>
                             {types}
+                        </select>
+                </div>
+                <div className="form-group">
+                    <label htmlFor="capacity">Guests</label>
+                    <select
+                        onChange={handleChange}
+                        className="form-control"
+                        name="capacity" 
+                        id="capacity" 
+                        value={capacity}>
+                            {people}
                         </select>
                 </div>
             </form>
