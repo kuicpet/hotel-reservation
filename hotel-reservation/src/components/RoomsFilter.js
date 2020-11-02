@@ -104,7 +104,7 @@ export default function RoomsFilter({rooms}) {
                         type="checkbox" 
                         name="pets" 
                         id="pets" 
-                        checked={breakfast} 
+                        checked={pets} 
                         onChange={handleChange} />
                       <label htmlFor="pets">pets</label>
                   </div>
