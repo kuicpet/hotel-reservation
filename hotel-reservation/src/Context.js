@@ -14,6 +14,7 @@ class RoomProvider extends Component {
         loading: true,
         type: "all",
         capacity: 1,
+        description: "",
         price:0,
         minPrice: 0,
         maxPrice: 0,
@@ -29,6 +30,7 @@ class RoomProvider extends Component {
               content_type: "hotelReservation",
               order: "sys.createdAt",
           })
+          console.log(response.items)
           let rooms = this.formatData(response.items);
           let featuredRooms = rooms.filter(room => room.featured === true);
           let maxPrice = Math.max(...rooms.map(item => item.price));
