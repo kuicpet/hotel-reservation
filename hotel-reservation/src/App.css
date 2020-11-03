@@ -4,16 +4,18 @@
   box-sizing: border-box;
 }
 :root {
-  --primaryColor: #af9a7d;
+  --primaryColor: #fff;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
   --mainGrey: #ececec;
-  --darkGrey: #cfcfcf;
+  --mainBlue: #023e8a;
+  --mainBrown: #6a040f;
+  --darkGrey: #e9ecef;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 3px;
-  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
-  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --lightShadow: 0 4px 8px 0px rgba(0, 0, 0, 0.4);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.2);
 }
 /* globals */
 body {
@@ -34,6 +36,7 @@ h2 {
 }
 h3 {
   font-size: 1.5em;
+  color: var(--mainBlue);
   line-height: 1;
   margin-bottom: 1em;
 }
@@ -56,6 +59,7 @@ h6 {
 .btn-primary {
   display: inline-block;
   text-decoration: none;
+  font-weight: bold;
   letter-spacing: var(--mainSpacing);
   color: var(--mainBlack);
   background: var(--primaryColor);
@@ -109,7 +113,7 @@ h6 {
 }
 .nav-icon {
   font-size: 1.5rem;
-  color: var(--primaryColor);
+  color: var(--mainBlue);
 }
 .nav-links {
   height: 0;
@@ -129,7 +133,12 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 .nav-links a:hover {
-  color: var(--primaryColor);
+  color: var(--mainBlue);
+  border-bottom: 2px solid var(--mainBlue);
+}
+.nav-links a:focus {
+  color: var(--mainBlue);
+  border-bottom: 2px solid var(--mainBlue);
 }
 
 .show-nav {
@@ -184,7 +193,7 @@ h6 {
 }
 .banner div {
   width: 10rem;
-  height: 5px;
+  height: 1px;
   background: var(--primaryColor);
   margin: 1.7rem auto;
 }
@@ -222,9 +231,9 @@ h6 {
 }
 .section-title div {
   width: 5rem;
-  height: 5px;
+  height: 1px;
   margin: 0 auto;
-  background: var(--primaryColor);
+  background: var(--mainBlack);
 }
 /* end of Title */
 
@@ -246,7 +255,7 @@ h6 {
 }
 .service span {
   display: inline-block;
-  color: var(--primaryColor);
+  color: var(--mainBlue);
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
@@ -343,7 +352,7 @@ h6 {
   background: rgba(0, 0, 0, 0.8);
 }
 .img-container:hover img {
-  opacity: 0.3;
+  opacity: 0.6;
 }
 .img-container:hover .price-top {
   opacity: 0;
@@ -409,6 +418,7 @@ h6 {
 }
 .room-extras h6 {
   text-transform: capitalize;
+  color: var(--mainBlue);
   letter-spacing: var(--mainSpacing);
 }
 .extras {
