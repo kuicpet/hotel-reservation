@@ -1,11 +1,14 @@
 import React from 'react';
-import loadingGif from "../images/gif/loading-arrow.gif";
+import ReactLoading from "react-loading";
 
 export default function Loading() {
     return (
         <div className="loading">
-            <h4>rooms data loading...</h4>
-            <img src={loadingGif} alt="" />
+            <div className="load">
+                <ReactLoading type="spin" color="#023e8a" width={30} height={30} />
+            </div>
+            <h4>loading...</h4>
+            
         </div>
     )
 }
