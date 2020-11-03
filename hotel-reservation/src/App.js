@@ -6,6 +6,7 @@ import SingleRoom from "./pages/SingleRoom";
 import NotFound from "./pages/NotFound";
 import Navbar from './components/Navbar';
 
+
 function App() {
   return (
     <>
