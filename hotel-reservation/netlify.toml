@@ -1,7 +1,7 @@
 [build]
   command="npm run build"
   publish="/build"
-  base="chow"
+  base="hotel-reservation"
 [[redirects]]
   from = "/*"
   to = "/index.html"
