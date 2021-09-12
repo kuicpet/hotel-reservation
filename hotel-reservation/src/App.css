@@ -491,6 +491,8 @@ h6 {
 }
 .form-group {
   text-transform: capitalize;
+  color: var(--mainBlue);
+  font-weight: bold;
 }
 .form-group label {
   display: block;
@@ -501,12 +503,14 @@ h6 {
   width: 100%;
   background: transparent;
   font-size: 1rem;
+  border: 2px solid var(--mainBlue);
+  color: var(--mainBlue);
 }
 input[type='range'] {
   -webkit-appearance: none;
   appearance: none;
   height: 7px;
-  background: #ececec;
+  background: var(--mainBlue);
   border-radius: 5px;
   background-repeat: no-repeat;
 }
@@ -517,7 +521,7 @@ input[type='range']::-webkit-slider-thumb {
   width: 30px;
   border-radius: 50%;
   background: #f7f7fc;
-  border: 8px solid #00d789;
+  border: 8px solid var(--mainBlue);
 }
 input[type='range']::-webkit-slider-runnable-track {
   -webkit-appearance: none;
@@ -532,7 +536,7 @@ input[type='range']::-webkit-slider-runnable-track {
 .size-input {
   width: 40%;
   padding: 0.2rem;
-  border: 1px solid var(--mainBlack);
+  border: 2px solid var(--mainBlue);
   border-radius: 0.3rem;
   margin-right: 0.3rem;
 }
@@ -545,6 +549,11 @@ input[type='range']::-webkit-slider-runnable-track {
   display: inline-block;
   font-size: 0.8rem;
   margin-left: 0.5rem;
+}
+input[type='checkbox']{
+  height: 20px !important;
+  width: 20px !important;
+  border: 2px solid var(--mainBlue) !important;
 }
 @media screen and (min-width: 776px) {
   .filter-form {
