@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import {RoomContext} from "../Context";
 import Styledhero from "../components/Styledhero";
+import Meta from '../components/Meta';
 
 export default class SingleRoom extends Component {
     constructor(props) {
@@ -30,6 +31,7 @@ export default class SingleRoom extends Component {
         // console.log(defaultImg)
         return (
             <>
+            <Meta title={`Beach Resort | ${name} room`} />
             <Styledhero img={mainImg || this.state.defaultBcg}>
               <Banner title={`${name} room`}>
                 <Link to="/rooms" className="btn-primary">
