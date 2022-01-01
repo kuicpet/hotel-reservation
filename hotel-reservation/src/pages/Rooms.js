@@ -8,7 +8,7 @@ import Meta from '../components/Meta';
 export default function Rooms() {
     return (
         <>
-        <Meta title='Beach Resort | Rooms' />
+        <Meta title='Beach Resort | rooms' />
         <Hero hero="roomsHero">
             <Banner title="Our rooms">
                 <Link to="/" className="btn-primary">return home</Link>            

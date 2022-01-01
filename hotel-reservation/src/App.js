@@ -5,6 +5,7 @@ import Rooms from "./pages/Rooms";
 import SingleRoom from "./pages/SingleRoom";
 import NotFound from "./pages/NotFound";
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route  exact path="/rooms/:slug" component={SingleRoom}/>
         <Route component={NotFound}/>
       </Switch>
+      <Footer name = 'Beach Resort'/>
     </>
   );
 }

@@ -567,3 +567,11 @@ input[type='checkbox']{
   }
 }
 /* end of rooms fitler*/
+
+/*Footer*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
